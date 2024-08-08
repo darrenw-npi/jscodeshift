@@ -18,7 +18,7 @@ const temp = require('temp');
 const ignores = require('./ignoreFiles');
 
 const availableCpus = Math.max(require('os').cpus().length - 1, 1);
-const CHUNK_SIZE = 50;
+const CHUNK_SIZE = 40;
 
 function lineBreak(str) {
   return /\n$/.test(str) ? str : str + '\n';
